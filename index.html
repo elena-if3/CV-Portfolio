@@ -8,35 +8,46 @@
 </head>
 <body>
     <header>
-        <div id="upper-left-corner">
+        <div class="left" id="upper-left-corner">
             <div id="corner-title">
                 <h1>Elena Rottin</h1>
                 <h2>Junior Web Developer</h2>
             </div>
         </div>
-        <div>
+        <div class="right" id="burger-menu">
             <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="experiences.html">Not just a web dev!</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
-                </ul>
+                <div>
+                    <input id="toggle" type="checkbox">
+                    <label id="nav-icon1" for="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div id="menu">
+
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="experiences.html">Not just a web dev!</a></li>
+                            <li><a href="contact.html">Contact me</a></li>
+                        </ul>
+
+                    </div>
+                </div>
             </nav>
         </div>
+        <hr class="clear">
     </header>
     <main>
         <div class="left circle"><img src="/assets/images/MW_AtmTra.jpg" alt="Here's a photo of myself"></div>
-        <section>
-            <div>
-                <h3>Welcome! Let me introduce myself</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure similique, eaque sapiente exercitationem asperiores velit ipsum nisi ab veniam excepturi aspernatur voluptatibus adipisci incidunt doloremque doloribus a. Error, placeat! Nostrum!
-                Ducimus aut error quisquam sit porro impedit maxime quas molestiae modi illum, vel culpa, cum magnam blanditiis esse fugiat veritatis hic voluptas cumque perferendis. Expedita tempore aspernatur perferendis odit aperiam!
-                Esse perspiciatis obcaecati impedit sint eos possimus fugit optio, delectus, magnam quisquam quidem assumenda recusandae omnis perferendis, officiis iure porro. Voluptas illo perspiciatis nam dolores exercitationem vero similique deserunt qui?</p>
-            </div>
-        </section>
-        <div class="closing-brackets"><img src="" alt=""></div>
+        <div class="text-container">
+            <h3>Welcome! Let me introduce myself</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure similique, eaque sapiente exercitationem asperiores velit ipsum nisi ab veniam excepturi aspernatur voluptatibus adipisci incidunt doloremque doloribus a. Error, placeat! Nostrum!
+            Ducimus aut error quisquam sit porro impedit maxime quas molestiae modi illum, vel culpa, cum magnam blanditiis esse fugiat veritatis hic voluptas cumque perferendis. Expedita tempore aspernatur perferendis odit aperiam!
+            Esse perspiciatis obcaecati impedit sint eos possimus fugit optio, delectus, magnam quisquam quidem assumenda recusandae omnis perferendis, officiis iure porro. Voluptas illo perspiciatis nam dolores exercitationem vero similique deserunt qui?</p>
+        </div>
+        <div class="closing-brackets"><img src="/assets/images/Brack-FE5E41-cl.png" alt=""></div>
     </main>
     <footer>
         <div><p>elena.rottin(at)gmail.com</p></div>

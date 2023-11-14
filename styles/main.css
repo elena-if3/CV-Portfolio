@@ -5,17 +5,18 @@
 
 html{
     height: 100%;
-    background-color: #eaead7;
-    color: #2d2c24;
 }
 
 body{
     margin : 0;
     padding : 0;
+    background-color: #eaead7;
+    color: #2d2c24;
     font-family: 'Figtree', sans-serif;
 }
 
 #upper-left-corner{
+    display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
@@ -25,20 +26,85 @@ body{
 }
 
 #corner-title{
-    font-size: larger;
-    transform: rotate(-27deg);
+    color: #eaead7;
+    font-size: 1.5em;
+    text-align: center;
+    transform: rotate(-26.5deg);
     position: absolute;
-    left: 2em;
-    top: 4em;
+    left: 1em;
+    top: 2em;
     z-index: 1;
 }
 
+#burger-menu{
+    display: block;
+    margin: 1%;
+    padding: 1%;
+    position: absolute;
+    right: 2vw;
+    text-align: right;
+    width: 15vw;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    opacity: 0;
+    clear: both;
+    margin: 0;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+
+#nav-icon1 span{
+    display: block;
+    margin: 4px;
+    height: 10px;
+    width: 50px;
+    background: #fe5234;
+    border-radius: 10px;
+}
+
+#toggle:checked ~ #nav-icon1 span:nth-child(1){
+    transform: rotate(135deg) translate(21px,-13px);
+}
+#toggle:checked ~ #nav-icon1 span:nth-child(2){
+    opacity: 0;
+    left: -60px;
+}
+#toggle:checked ~ #nav-icon1 span:nth-child(3){
+    transform: rotate(-135deg) translate(5px);
+}
+
+#nav-icon1 span{  
+    cursor:pointer; 
+    transition: .25s ease-in-out;
+    position:relative;
+    left:0px;
+}
+
+
+
+li{
+    
+}
 a{
     text-decoration: none;
 }
 
 nav ul{
     padding : 0;
+    /* max-height: 0; */
+    /* overflow: hidden; */
+    /* transition : max-height 0.5s linear; */
 }
 
 nav li{
@@ -46,10 +112,33 @@ nav li{
 }
 
 .circle{
-    width: 18em;
-    height: 18em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
-    overflow: hidden;
     border: none;
-    /* border: 10px solid #70587C; */
+    overflow: hidden;
+    margin: 2%;
+    /* border: 5px solid #; */
+}
+
+
+.text-container{
+    width: 80%;
+    margin: 1%;
+    padding: 1%;
+}
+
+h3{
+    color: #8B782D;
+}
+
+#menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s linear;
+}
+
+
+#toggle:checked + label + div#menu{
+    max-height: 256px;
 }

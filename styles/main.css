@@ -15,14 +15,14 @@ body{
     font-family: 'Figtree', sans-serif;
 }
 
-#upper-left-corner{
+/* #upper-left-corner{
     display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 25em 50em 0 0;
     border-color: #fe5234 transparent transparent transparent;
-    /* z-index: 0; */
+    z-index: 0;
 }
 
 #corner-title{
@@ -34,7 +34,7 @@ body{
     left: 1em;
     top: 2em;
     z-index: 1;
-}
+}*/
 
 #burger-menu{
     display: block;
@@ -91,7 +91,11 @@ input[type="checkbox"]{
     left:0px;
 }
 
-
+.grid-even-columns{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 60% 1fr;
+}
 
 li{
     
